@@ -1,0 +1,38 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+  background: #ffc600;
+  display: flex;
+  justify-content: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+p {
+  height: 140px;
+  background: #fff;
+  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.4em;
+  display: grid;
+  place-items: center;
+  margin: 0.5em;
+}
+.res {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+input:focus {
+  border: solid #121212;
+  outline: none;
+}
+button {
+  color: white;
+}
+p:hover {
+  transform: translate(-0.1em, -0.1em);
+}
