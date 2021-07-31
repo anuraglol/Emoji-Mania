@@ -26,7 +26,7 @@ function Github() {
 }
 function Link(props) {
   return (
-    <a href={props.url} className="m-4">
+    <a href={props.url} className="m-4" target="blank">
       {props.link}
     </a>
   );
@@ -36,7 +36,7 @@ export default function Footer() {
     <>
       <span>
         Created with 💖 by{" "}
-        <a href="https://kr-anurag.netlify.app/" className="underline">
+        <a href="https://kr-anurag.netlify.app/" className="underline" target="blank">
           Anurag
         </a>
       </span>
