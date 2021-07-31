@@ -1,6 +1,7 @@
 * {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  text-align: center;
 }
 body {
   height: 100vh;
@@ -35,4 +36,12 @@ button {
 }
 p:hover {
   transform: translate(-0.1em, -0.1em);
+}
+svg {
+  height: 2em;
+  width: 2em;
+  transition: all 0.3s;
+}
+svg:hover {
+  margin-top: 10px;
 }
