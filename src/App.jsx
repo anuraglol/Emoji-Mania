@@ -34,16 +34,6 @@ export default function App() {
         Search
       </button>
       <div className="res"></div>
-      <span>
-        Created with 💖 by{" "}
-        <a
-          href="https://kr-anurag.netlify.app/"
-          target="blank"
-          className="underline"
-        >
-          Anurag
-        </a>
-      </span>
     </div>
   );
 }
