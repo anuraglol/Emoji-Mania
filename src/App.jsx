@@ -21,10 +21,10 @@ export default function App() {
     } catch (err) {}
   }
 
-  document.querySelector('input').addEventListener('keyup', function(event){
+  document.querySelector('.emoji-input').addEventListener('keyup', function(event){
     if(event.keyCode===13){
       event.preventDefault()
-      fetchEmoji()
+     document.querySelector('.btn').click()
     }
   })
   return (
@@ -32,11 +32,11 @@ export default function App() {
       <input
         type="text"
         onChange={(e) => setEmoji(e.target.value)}
-        className="m-2 p-1 bg-white rounded shadow"
+        className="m-2 p-1 bg-white rounded shadow emoji-input"
       />
       <button
         onClick={fetchEmoji}
-        className="bg-green-600 rounded shadow p-2 hover:bg-green-400"
+        className="bg-green-600 rounded shadow p-2 hover:bg-green-400 btn"
       >
         Search
       </button>
