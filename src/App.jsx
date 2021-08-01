@@ -20,6 +20,13 @@ export default function App() {
       }
     } catch (err) {}
   }
+
+  document.querySelector('input').addEventListener('keyup', function(event){
+    if(event.keyCode===13){
+      event.preventDefault()
+      fetchEmoji()
+    }
+  })
   return (
     <div className="App">
       <input
