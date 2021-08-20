@@ -27,7 +27,7 @@ function Github() {
 function Link(props) {
   return (
     <a href={props.url} className="m-4" target="blank">
-      {props.link}
+      {props.img}
     </a>
   );
 }
@@ -35,14 +35,18 @@ export default function Footer() {
   return (
     <>
       <span>
-        Created with 💖 by{" "}
-        <a href="https://kr-anurag.netlify.app/" className="underline" target="blank">
+        Created with 💖 by {""}
+        <a
+          href="https://kr-anurag.netlify.app/"
+          className="underline"
+          target="blank"
+        >
           Anurag
         </a>
       </span>
       <div className="flex flex-row justify-center">
-        <Link url="https://github.com/kr-anurag" link={<Github />} />
-        <Link url="https://twitter.com/kr_anurag_" link={<Twitter />} />
+        <Link url="https://github.com/kr-anurag" img={<Github />} />
+        <Link url="https://twitter.com/kr_anurag_" img={<Twitter />} />
       </div>
     </>
   );

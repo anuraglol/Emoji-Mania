@@ -13,6 +13,7 @@ export default function App() {
     const data = await res.json();
     let i;
     document.querySelector(".res").innerHTML = "";
+
     try {
       for (i = 0; i <= data.length; i++) {
         var x = data[i].character;
