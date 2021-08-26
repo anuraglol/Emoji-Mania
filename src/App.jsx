@@ -7,7 +7,7 @@ export default function App() {
   var [emoji, setEmoji] = useState("");
   async function fetchEmoji() {
     const url = "https://emoji-api.com/emojis?search=";
-    const api = process.env.API_KEY;
+    const api = '740e54afa31f4da2388c6e5f3f074815a61a4b17';
     const BASEUrl = `${url}${emoji}&access_key=${api}`;
     const res = await fetch(BASEUrl);
     const data = await res.json();
